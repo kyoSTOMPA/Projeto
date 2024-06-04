@@ -45,7 +45,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   border: 1px solid red;
   /* o comando "margin" funciona como um relogio somente quando especificados todos os campos */
   margin: 56px auto 0px auto;
