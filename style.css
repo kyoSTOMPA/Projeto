@@ -48,7 +48,6 @@ body * {
 #container {
   width: 100%;
   max-width: 588px;
-  border: 1px solid red;
   /* o comando "margin" funciona como um relogio somente quando especificados todos os campos */
   margin: 56px auto 0px auto;
   padding: 0 24px;
@@ -71,7 +70,6 @@ body * {
 }
 
 #switch {
-  border: 1px solid red;
   position: relative;
   width: 64px;
 
@@ -149,7 +147,6 @@ ul li a:hover {
   border: 1.5px solid var(--text-color);
 }
 #social-links {
-  border: 1px solid green;
   display: flex;
   justify-content: center;
   padding: 24px 0;
