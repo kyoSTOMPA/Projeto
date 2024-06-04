@@ -1,7 +1,7 @@
-<h1 align="center"> BaroniBOSS </h1>
+<h1 align="center"> DevLinks </h1>
 
 <p align="center">
-Programa exclusivo e gratuito, promovido pelo BaroniBOSS para ensino de tecnologias WEB.
+Programa exclusivo e gratuito, promovido pelo STOMPA para ensino de tecnologias WEB.
 </p>
 
 <p align="center">
@@ -44,4 +44,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ÓDIO by BaroniBOSS :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+Feito com ♥ by STOMPA :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
