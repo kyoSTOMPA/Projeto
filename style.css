@@ -1,0 +1,170 @@
+/* o "*" significa todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.02);
+  --switch-bg-url: url(./assets/moon-stars.svg);
+}
+
+body {
+  /*
+  background-image: url(./assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  */
+
+  /*background: color image repeat position/size */
+  background: var(--bg-url) no-repeat top center/cover;
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/sun.svg);
+}
+
+/* o "*" significa todos os elementos do body */
+body * {
+  /* O comando abaixo são informações da fonte geradas pelo fonts.google.com*/
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+#container {
+  width: 360px;
+  border: 1px solid red;
+  /* o comando "margin" funciona como um relogio somente quando especificados todos os campos */
+  margin: 56px auto 0px auto;
+  padding: 0 24px;
+}
+
+/*profile*/
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+#profile img {
+  width: 112px;
+}
+/* O comando abaixo foi escrito conforme o site da Figma. Obs: o comando "font-size: 16px" é o valor padrão da WEB sendo os 16px. O comando "Font-weight" é a intensidade do negrito.*/
+#profile p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+#switch {
+  border: 1px solid red;
+  position: relative;
+  width: 64px;
+
+  /* Alinhamento utilizando "display:block"(funciona como um relogio) */
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  /*quando o alinhamento é absoluto é feito desta forma "position: absolute;"*/
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+/* Links */
+ul {
+  list-style: none;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+/* o comando "align-items:" alinha o texto no centro da linha em questão de altura.
+o comando "justify-content:" ajusta o texto/conteudos assim como o "text-align:" que funciona apenas para TEXTO */
+ul li a {
+  /*alinhamento utilizando o "display:flex"*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.2s;
+}
+
+/*pseudo-selector */
+ul li a:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+#social-links {
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+#social-links a:hover {
+  background: var(--highlight-color);
+}
+
+footer {
+  padding: 24px;
+  /*alinhamento de texto*/
+  text-align: center;
+  font-size: 14px;
+}

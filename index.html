@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!--Propósito: <head> é usado para metadados e links para recursos externos, enquanto <body> é usado para o conteúdo visível da página.-->
+  <head>
+    <!--Fonte inserida através do site fonts.google.com-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+ 
+    <!--O comando abaixo especifica a codificação de caracteres usada pelo documento HTML.-->
+    <meta charset="UTF-8" />
+    <!-- O comando abaixo "<meta http-equiv="X-UA-Compatible" content="IE=edge" significa que terá compatibilidade com navegadores e versões antigas./>"-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevLinks</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!--Tudo que for antes ta TAG de fechamento </div> será alterado-->
+    <div id="container">
+      <div id="profile">
+        <img src="./assets/matheus.png" alt="Matheus chapado">
+        <p>@BaroniBOSS</p>
+        </div>
+
+        <div id="switch" onclick="toggleMode()">
+          <button>
+
+          </button>
+          <span>
+            
+          </span>
+        </div>
+
+        <ul>
+          <li>
+            <a href="https://Google.com" target="_blank">Google</a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank">Baixar meu e-book</a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank">ver meu portfólio</a>
+          </li>
+
+          <li>
+            <a href="https://rocketseat.com.br/explorer" target="_blank">conheça o explorer</a>
+          </li>
+        </ul>
+      </div>
+       <div id="social-links"> 
+        <a href="https://youtube.com" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon> 
+        </a>
+        <a href="https://github.com" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://br.linkedin.com" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+       </div> 
+       <footer>
+        Feito com <strong><u>ÓDIO</u></strong> pelo <a href="https://rocketseat.com.br/">
+          <strong>BaroniBOSS</strong>
+        </a>
+       </footer>  
+      </div>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
+      </script>
+      <script src="./script.js">
+      </script>
+   </body>
+</html>
